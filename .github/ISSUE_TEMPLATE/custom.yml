@@ -1,0 +1,16 @@
+name: Custom Issue Template
+
+on:
+  issues:
+    types: [opened]
+
+jobs:
+  notify-on-issue:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Notify Team
+        uses: actions/slack@v3
+        with:
+          channel: '#issue-notifications'
+          text: 'A new issue has been opened: ${{ github.event.issue.title }}'
+
