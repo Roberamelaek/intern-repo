@@ -1,42 +1,10 @@
-name: Internship Application
-
-about:
-  title: Brief Description of the Issue
-  description: |
-    Please provide details about the internship opportunity you are applying for.
-
-company_details:
-  title: Company Details
-  description: |
-    Provide information about the company offering the internship.
-
-  fields:
-    company_name:
-      label: Company Name
-      description: Name of the company offering the internship.
-      required: true
-
-    company_website:
-      label: Company Website
-      description: Website of the company.
-      required: true
-
-    company_location:
-      label: Company Location
-      description: Location of the company.
-      required: true
-
-    internship_position:
-      label: Internship Position
-      description: Position or role you are applying for.
-      required: true
-
-    application_deadline:
-      label: Application Deadline
-      description: Deadline for applying to the internship.
-      required: true
-
-    additional_information:
-      label: Additional Information
-      description: Any additional details you would like to provide.
-      required: false
+name: "Bug report"
+body:
+- type: textarea
+  id: name_1
+  attributes:
+    label: Name
+- type: textarea
+  id: name_2
+  attributes:
+    label: Name
