@@ -1,0 +1,60 @@
+name: Add Internship Company Details
+description: Request to add details of an internship company to the tracker
+title: "[Internship Company]: "
+labels: [Internship, enhancement]
+assignees:
+  -  # Add relevant assignees here
+body:
+  - type: input
+    id: company_name
+    attributes:
+      label: Company Name
+      description: Name of the internship company
+      placeholder: Enter company name
+    validations:
+      required: true
+
+  - type: input
+    id: company_website
+    attributes:
+      label: Company Website
+      description: Website of the internship company
+      placeholder: Enter company website URL
+    validations:
+      required: true
+
+  - type: input
+    id: company_location
+    attributes:
+      label: Company Location
+      description: Location of the internship company
+      placeholder: Enter company location
+    validations:
+      required: true
+
+  - type: input
+    id: internship_position
+    attributes:
+      label: Internship Position
+      description: Position or role offered by the company
+      placeholder: Enter internship position
+    validations:
+      required: true
+
+  - type: input
+    id: application_deadline
+    attributes:
+      label: Application Deadline
+      description: Deadline for applying to the internship
+      placeholder: Enter application deadline
+    validations:
+      required: true
+
+  - type: textarea
+    id: additional_information
+    attributes:
+      label: Additional Information
+      description: Any additional details about the internship/company
+      placeholder: Enter additional information
+    validations:
+      required: false
