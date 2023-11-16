@@ -1,29 +1,8 @@
-name: om Issue Template
-about: Descbe this issue template's purpose here.
-
-title: ''
-labels: ''
-assignees: ''
-
-description: |
-  Please provide a detailed description of the issue here.
-  
-steps_to_reproduce:
-  - Step 1
-  - Step 2
-  - Step 3
-
-expected_behavior: |
-  Describe what you expected to happen.
-
-actual_behavior: |
-  Describe what actually happened.
-
-screenshots: |
-  If applicable, add screenshots to help explain the issue.
-
-environment: |
-  Include details about your environment here (e.g., operating system, browser, version).
-
-additional_info: |
-  Add any other relevant information here.
+blank_issues_enabled: false
+contact_links:
+  - name: GitHub Community Support
+    url: https://github.com/orgs/community/discussions
+    about: Please ask and answer questions here.
+  - name: GitHub Security Bug Bounty
+    url: https://bounty.github.com/
+    about: Please report security vulnerabilities here.
