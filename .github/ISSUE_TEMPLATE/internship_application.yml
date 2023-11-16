@@ -1,10 +1,23 @@
-name: "Bug report"
-body:
-- type: textarea
-  id: name_1
-  attributes:
-    label: Name
-- type: textarea
-  id: name_2
-  attributes:
-    label: Name
+name: Internship Application
+description: Template for submitting internship applications.
+
+on:
+  issues:
+    types: [opened]
+
+jobs:
+  internship_application:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Collect Internship Information
+        id: internship_info
+        run: |
+          echo "Please provide details about the internship opportunity you are applying for."
+
+          echo "## Company Details"
+          echo "Name of the company: ${{ github.event.issue.company_name }}"
+          echo "Company Website: ${{ github.event.issue.company_website }}"
+          echo "Location: ${{ github.event.issue.company_location }}"
+          echo "Internship Position: ${{ github.event.issue.internship_position }}"
+          echo "Application Deadline: ${{ github.event.issue.application_deadline }}"
+          echo "Additional Information: ${{ github.event.issue.additional_information }}"
