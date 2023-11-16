@@ -1,3 +1,4 @@
 blank_issues_enabled: true
-name: Bug
-description: File a bug report
+contact_links:
+  - name: virtual
+    about: thsi is about this
