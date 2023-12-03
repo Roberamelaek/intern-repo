@@ -1,4 +1,4 @@
-
+name: Networking Task
 body:
   - type: input
     id: task-name
