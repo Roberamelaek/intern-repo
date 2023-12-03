@@ -61,12 +61,3 @@ body:
       placeholder: "Detailed description of the task"
     validations:
       required: true
-
-  - type: input
-    id: due-date
-    attributes:
-      label: Due Date
-      description: "Specify the deadline for completing this task."
-      placeholder: "Due Date"
-    validations:
-      required: false
