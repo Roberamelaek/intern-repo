@@ -1,0 +1,86 @@
+name: Networking Issue
+
+description: |
+  Thank you for reporting an issue. Please fill out the following details to help us
+  understand and address the problem you are experiencing.
+
+labels:
+  - networking
+  - bug
+
+body:
+  - type: input
+    id: issue-summary
+    attributes:
+      label: Issue Summary
+      description: Provide a brief summary of the issue.
+      placeholder: "Brief summary of the issue"
+    validations:
+      required: true
+
+  - type: textarea
+    id: issue-description
+    attributes:
+      label: Issue Description
+      description: |
+        Please provide a detailed description of the issue, including:
+        - Steps to reproduce
+        - Expected behavior
+        - Actual behavior
+        - Any error messages or logs
+      placeholder: "Detailed description of the issue"
+    validations:
+      required: true
+
+  - type: input
+    id: environment
+    attributes:
+      label: Environment
+      description: "Specify the environment where the issue occurred (e.g., development, staging, production)."
+      placeholder: "Environment information"
+    validations:
+      required: false
+
+  - type: input
+    id: network-setup
+    attributes:
+      label: Network Setup
+      description: |
+        Describe the network setup relevant to the issue, including:
+        - Network topology
+        - Hardware details (routers, switches, etc.)
+        - IP addresses and subnets
+      placeholder: "Description of the network setup"
+    validations:
+      required: false
+
+  - type: input
+    id: additional-info
+    attributes:
+      label: Additional Information
+      description: "Provide any additional information that might be helpful in resolving the issue."
+      placeholder: "Additional information"
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: issue-checklist
+    attributes:
+      label: Issue Checklist
+      description: "Please check the following if applicable."
+      options:
+        - label: "I have verified that the issue is reproducible."
+          required: false
+        - label: "I have searched for existing similar issues and couldn't find any."
+          required: false
+        - label: "I have included relevant logs or error messages."
+          required: false
+
+  - type: textarea
+    id: steps-to-reproduce
+    attributes:
+      label: Steps to Reproduce
+      description: "If applicable, provide clear steps to reproduce the issue."
+      placeholder: "1. Step one\n2. Step two\n3. ..."
+    validations:
+      required: false
