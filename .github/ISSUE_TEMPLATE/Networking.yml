@@ -19,9 +19,9 @@ body:
 
 
   - type: input
-    id: assignee-email
+    id: Persons-email
     attributes:
-      label: Assignee's Email
+      label: Persons's Email
       description: "Provide the email address of the person responsible for this task."
       placeholder: "Assignee's Email"
     validations:
