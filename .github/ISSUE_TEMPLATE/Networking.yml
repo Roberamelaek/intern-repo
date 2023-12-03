@@ -1,11 +1,3 @@
-name: Networking Task
-
-description: |
-  Use this template to add a networking-related task to the project.
-
-labels:
-  - networking
-  - task
 
 body:
   - type: input
