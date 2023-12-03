@@ -1,0 +1,72 @@
+name: Networking Task
+
+description: |
+  Use this template to add a networking-related task to the project.
+
+labels:
+  - networking
+  - task
+
+body:
+  - type: input
+    id: task-name
+    attributes:
+      label: Task Name
+      description: "Provide a descriptive name for the task."
+      placeholder: "Descriptive Task Name"
+    validations:
+      required: true
+
+  - type: input
+    id: assignee-name
+    attributes:
+      label: Assignee's Name
+      description: "Specify the name of the person responsible for this task."
+      placeholder: "Assignee's Name"
+    validations:
+      required: true
+
+  - type: input
+    id: assignee-email
+    attributes:
+      label: Assignee's Email
+      description: "Provide the email address of the person responsible for this task."
+      placeholder: "Assignee's Email"
+    validations:
+      required: true
+
+  - type: input
+    id: company-name
+    attributes:
+      label: Company Name
+      description: "Specify the name of the company related to this task."
+      placeholder: "Company Name"
+    validations:
+      required: true
+
+  - type: input
+    id: company-location
+    attributes:
+      label: Company Location
+      description: "Provide the location or address of the company."
+      placeholder: "Company Location"
+    validations:
+      required: false
+
+  - type: textarea
+    id: task-description
+    attributes:
+      label: Task Description
+      description: "Provide a detailed description of the task, including specific requirements and goals."
+      placeholder: "Detailed description of the task"
+    validations:
+      required: true
+
+  - type: input
+    id: due-date
+    attributes:
+      label: Due Date
+      description: "Specify the deadline for completing this task."
+      placeholder: "Due Date"
+    validations:
+      required: false
