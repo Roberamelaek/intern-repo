@@ -42,6 +42,13 @@ body:
       required: true
 
   - type: input
+    id: related-network-card
+    attributes:
+      label: Related Network (if applicable)
+      description: Link to the related issue from the network contact info
+      placeholder: "e.g., repo/network#123"
+
+  - type: input
     id: application_deadline
     attributes:
       label: Application Deadline
